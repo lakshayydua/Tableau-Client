@@ -511,10 +511,11 @@ if __name__ == '__main__':
     ####
     # Global variables -- SET THESE BEFORE RUNNING
     ####
-    SERVER = "http://tableau.sfu.ca"         # Set to the server URL without a trailing slash (/).
+    SERVER = "https://tableau.sfu.ca"         # Set to the server URL without a trailing slash (/).
     USER = 'ldua'                # Set to your Tableau Server username. The user must be a server administrator.
     PASSWORD = 'workharder247'            # Set to your Tableau Server password.
     WORKBOOK_NAME = 'SFU Research - Twitter Analytics.twbx'  # Set to the name of the workbook to publish. Include a path if necessary.
+    CONTENT_URL = 'vpr'
     CHUNKED = True                        # Set to False to publish the workbook in one request. (The workbook must be less than 64MB.)
     
     ####
@@ -532,7 +533,7 @@ if __name__ == '__main__':
 
     # Signs in to get an authentication token and site ID to use later
     print("Signing in")
-    TOKEN, SITE_ID, MY_USER_ID = sign_in(USER, PASSWORD)
+    TOKEN, SITE_ID, MY_USER_ID = sign_in(USER, PASSWORD, CONTENT_URL)
 
     # Lists all projects on the server
     print("Getting a list of all projects on the server for the Default site:")

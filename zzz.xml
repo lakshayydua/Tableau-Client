@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tsResponse xmlns="http://tableau.com/api" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableau.com/api http://tableau.com/api/ts-api-2.7.xsd">
+    <pagination pageNumber="1" pageSize="100" totalAvailable="6" />
+    <datasources>
+        <datasource id="8341082d-5089-47c0-b717-8ea5a28e59aa" name="social" contentUrl="social" type="mysql" createdAt="2019-05-10T05:51:12Z" updatedAt="2019-05-10T05:51:12Z" isCertified="false">
+            <project id="669ac120-ed2b-481b-806a-f553e56c9f9c" name="VPR Comms Social Media Project" />
+            <owner id="5b452ebb-89a6-4b5f-947a-4db01971a33f" />
+            <tags />
+        </datasource>
+        <datasource id="860aa618-7982-4e84-93c7-a606bf095ef6" name="twitter_hashtags (social)" contentUrl="twitter_hashtagssocial" type="mysql" createdAt="2019-05-10T05:53:21Z" updatedAt="2019-05-10T05:53:21Z" isCertified="false">
+            <project id="669ac120-ed2b-481b-806a-f553e56c9f9c" name="VPR Comms Social Media Project" />
+            <owner id="5b452ebb-89a6-4b5f-947a-4db01971a33f" />
+            <tags />
+        </datasource>
+        <datasource id="e6deb384-8735-4a39-bb72-d9971242cf1d" name="twitter_difference (social)" contentUrl="twitter_differencesocial" type="mysql" createdAt="2019-05-10T05:54:59Z" updatedAt="2019-05-10T05:54:59Z" isCertified="false">
+            <project id="669ac120-ed2b-481b-806a-f553e56c9f9c" name="VPR Comms Social Media Project" />
+            <owner id="5b452ebb-89a6-4b5f-947a-4db01971a33f" />
+            <tags />
+        </datasource>
+        <datasource id="a11f1d0d-7983-4fc8-8bdf-3550d08f8f2e" name="twitter_mentions_class (social)" contentUrl="twitter_mentions_classsocial" type="mysql" createdAt="2019-05-10T05:56:44Z" updatedAt="2019-05-10T05:56:44Z" isCertified="false">
+            <project id="669ac120-ed2b-481b-806a-f553e56c9f9c" name="VPR Comms Social Media Project" />
+            <owner id="5b452ebb-89a6-4b5f-947a-4db01971a33f" />
+            <tags />
+        </datasource>
+        <datasource id="dc3e52de-1561-4b91-b0b3-993a4987b3d5" name="twitter_mentions (social)" contentUrl="twitter_mentionssocial" type="mysql" createdAt="2019-05-10T05:57:17Z" updatedAt="2019-05-10T05:57:17Z" isCertified="false">
+            <project id="669ac120-ed2b-481b-806a-f553e56c9f9c" name="VPR Comms Social Media Project" />
+            <owner id="5b452ebb-89a6-4b5f-947a-4db01971a33f" />
+            <tags />
+        </datasource>
+        <datasource id="01c2ecf7-5c24-4433-8fb4-cf7cf9fd2f81" name="social (local copy)" contentUrl="sociallocalcopy" type="mysql" createdAt="2019-05-10T06:11:01Z" updatedAt="2019-05-10T06:11:01Z" isCertified="false">
+            <project id="669ac120-ed2b-481b-806a-f553e56c9f9c" name="VPR Comms Social Media Project" />
+            <owner id="5b452ebb-89a6-4b5f-947a-4db01971a33f" />
+            <tags />
+        </datasource>
+    </datasources>
+</tsResponse>

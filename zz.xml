@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tsResponse xmlns="http://tableau.com/api" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableau.com/api http://tableau.com/api/ts-api-2.7.xsd">
+    <pagination pageNumber="1" pageSize="100" totalAvailable="1" />
+    <projects>
+        <project id="669ac120-ed2b-481b-806a-f553e56c9f9c" name="VPR Comms Social Media Project" description="This project consolidates VPR Comm's social media accounts into an interactive Tableau dashboard that will be shared with VPR Communicators." contentPermissions="ManagedByOwner" />
+    </projects>
+</tsResponse>

@@ -29,11 +29,12 @@
 # * Added an OR test to look for either 'default' or 'Default' as the name of the default project.
 ####
 
-import math
 # Contains methods used to build and parse XML
 import xml.etree.ElementTree as ET
 import requests  # Contains methods used to make HTTP requests
 import sys
+import math
+import logging
 
 # The following packages are used to build a multi-part/mixed request.
 # They are contained in the 'requests' library.
@@ -52,6 +53,9 @@ xmlns = {'t': 'http://tableau.com/api'}
 ####
 # Functions for constructing HTTP multi-part requests and dealing with errors
 ####
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 def _make_multipart(parts):
@@ -532,13 +536,23 @@ if __name__ == '__main__':
     ####
 
     # Signs in to get an authentication token and site ID to use later
-    print("Signing in")
-    TOKEN, SITE_ID, MY_USER_ID = sign_in(USER, PASSWORD, CONTENT_URL)
+    
+    logger.info(" Signing in")
+    
+    TOKEN, SITE_ID, USER_ID = sign_in(USER, PASSWORD, CONTENT_URL)
 
+    logger.info(" TOKEN - {}".format(TOKEN))
+    logger.info(" SITE_ID - {}".format(SITE_ID))
+    logger.info(" USER_ID - {}\n".format(USER_ID))
+
+    # Project Name - VPR Comms Social Media Project
+    # Project ID - 669ac120-ed2b-481b-806a-f553e56c9f9c
+    """
     # Lists all projects on the server
-    print("Getting a list of all projects on the server for the Default site:")
+    logger.info(" Getting a list of all projects on the server for the Default site")
+    
     for project in query_projects():
-        print('\t{} (id: {})'.format(project.get('name'), project.get('id')))
+        logger.info(" Project Name - {} ; Project ID: {}".format(project.get('name'), project.get('id')))
 
     # Gets a list of projects
     list_of_projects = list(query_projects())
@@ -548,7 +562,11 @@ if __name__ == '__main__':
     for project in list_of_projects:
         if project.get('name') == 'default' or project.get('name') == 'Default' :
             default_project_id = project.get('id')
+    """
 
+    
+
+    """
     # Creates a group
     print('\nCreating a group')
     new_group = create_group('TableauExample')
@@ -591,3 +609,5 @@ if __name__ == '__main__':
     # Signs out (destroys the current session)
     sign_out()
     print("\nSigned out, and the authentication token has been invalidated")
+    
+    """

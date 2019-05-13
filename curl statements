@@ -1,3 +1,3 @@
-curl "https://tableau.sfu.ca/api/2.7/auth/signin" -X POST -d @signin.xml -H "Content-Type: application/xml" > z.xml
-curl "https://tableau.sfu.ca/api/2.7/sites/6fdcc4c3-2af8-4928-bdec-95d8cd2d7858/projects" -X GET -H "X-Tableau-Auth:nLVRjepnTdqMhdCYMHO0CQ|GVButkV2Yx7uDrcWF8qTtRNp5tTkyW4q" -H "Content-Type: application/xml" > zz.xml
-url "https://tableau.sfu.ca/api/2.7/sites/6fdcc4c3-2af8-4928-bdec-95d8cd2d7858/datasources" -X GET -H "X-Tableau-Auth:nLVRjepnTdqMhdCYMHO0CQ|GVButkV2Yx7uDrcWF8qTtRNp5tTkyW4q" -H "Content-Type: application/xml" > zzz.xml
+curl "https://tableau.sfu.ca/api/2.7/auth/signin" -X POST -d @signin.xml -H "Content-Type: application/xml" > curl_response1.xml
+curl "https://tableau.sfu.ca/api/2.7/sites/6fdcc4c3-2af8-4928-bdec-95d8cd2d7858/projects" -X GET -H "X-Tableau-Auth:nLVRjepnTdqMhdCYMHO0CQ|GVButkV2Yx7uDrcWF8qTtRNp5tTkyW4q" -H "Content-Type: application/xml" > curl_response2.xml
+url "https://tableau.sfu.ca/api/2.7/sites/6fdcc4c3-2af8-4928-bdec-95d8cd2d7858/datasources" -X GET -H "X-Tableau-Auth:nLVRjepnTdqMhdCYMHO0CQ|GVButkV2Yx7uDrcWF8qTtRNp5tTkyW4q" -H "Content-Type: application/xml" > curl_response3.xml
